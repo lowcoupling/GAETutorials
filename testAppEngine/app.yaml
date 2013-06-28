@@ -13,6 +13,11 @@ handlers:
   
 - url: /auth\.html 
   script: helloworld.py
+ 
+- url: /mapPage\.html
+  script: helloworld.py
+  
+  
   
 libraries:
 - name: webapp2

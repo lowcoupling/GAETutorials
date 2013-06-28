@@ -2,6 +2,7 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 from anotherPage import AnotherPage
 from authorizedPage import AuthorizedPage 
+from mapPage import MapPage
 
 class MainPage(webapp.RequestHandler):
     
@@ -13,7 +14,8 @@ class MainPage(webapp.RequestHandler):
 application = webapp.WSGIApplication([
                                       ('/', MainPage),
                                       ('/anotherpage.html',AnotherPage),
-                                      ('/auth.html',AuthorizedPage)
+                                      ('/auth.html',AuthorizedPage),
+                                      ('/mapPage.html',MapPage)
                                       ], debug=True)
 
 def main():
